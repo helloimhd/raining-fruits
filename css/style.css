@@ -171,9 +171,12 @@ textarea:focus, input:focus{
 	visibility: hidden;
 }
 
+.slidecontainer {
+	visibility: hidden;
+}
 /*If the browser window is 600px or smaller, the background color will be lightblue:*/
 @media only screen and (max-width: 600px) {
-
+/*
   .controls {
   	visibility: visible;
   	width: 350px;
@@ -198,6 +201,50 @@ textarea:focus, input:focus{
   	border: none;
   	width: 64px;
   	height: 64px;
-  }
+  }*/
 
+  .slidecontainer {
+  	width: 350px;
+  	margin: 15px auto;
+  	display: flex;
+  	justify-content: center;
+  	visibility: visible;
+/*  width: 350px;  Width of the outside container
+margin: auto;*/
 }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: url('../images/small-watermelon.png');
+  cursor: pointer;
+}
+
+/*.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('../images/small-watermelon.png');
+  cursor: pointer;
+}*/
+
+}   /*end of @media*/

@@ -59,20 +59,25 @@ function moveBar() {
     });
 }
 
-/*function moveBarControl() {
-    var left = document.getElementById("left");
-    var right = document.getElementById("right");
+function control() {
+    var position = 0;
+    bar.style.left = position + "px";    // start with left: 0px
 
-    document.addEventListener("ontouchstart", function(e) {
-    if (left) {   // checking the right button
-        moveLeft();
+    var slider = document.getElementById("myRange");
+/*    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;*/
+    console.log(slider.value)
 
-    } else if (right) {    // checking the left button
-        moveRight();
+    var sliderValue;
+    slider.oninput = function() {
+      //output.innerHTML = this.value;
+      var sliderValue = this.value;
+      console.log(sliderValue)
+
+      bar.style.left = sliderValue + "px";
     }
-    });
 }
-*/
+
 
 //  check if two elements touch
 function isCollapsed(element1, element2, fruitContent){

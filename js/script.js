@@ -37,7 +37,6 @@ console.log(fruitIcons)
 createStartDisplay();
 
 
-
 function startGame() {
     //console.log(createStartDisplay())
     startDisplay.remove();
@@ -47,6 +46,9 @@ function startGame() {
     document.querySelector(".highScore").style.visibility  = "visible";
     updateHighScore(playerName, playerScore)
     moveBar();
+
+    // for when game on phone
+    control()
 
     //  after 10 seconds, append the badIcons tgt so that badIcons will appear
     setTimeout(function() {
