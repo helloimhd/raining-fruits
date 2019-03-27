@@ -59,11 +59,11 @@ function moveBar() {
     });
 }
 
-/*function moveBarControl() {
+function moveBarControl() {
     var left = document.getElementById("left");
     var right = document.getElementById("right");
 
-    document.addEventListener("click", function(e) {
+    document.addEventListener("ontouchstart", function(e) {
     if (left) {   // checking the right button
         moveLeft();
 
@@ -72,7 +72,8 @@ function moveBar() {
     }
     });
 }
-*/
+
+
 //  check if two elements touch
 function isCollapsed(element1, element2, fruitContent){
     // method returns the size of an element and its position relative to the viewport.
