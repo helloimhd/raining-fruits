@@ -41,6 +41,7 @@ createStartDisplay();
 function startGame() {
     //console.log(createStartDisplay())
     startDisplay.remove();
+    bar.style.visibility = "visible";
     getPlayerName.style.visibility = "hidden";
     createLives();
     document.querySelector(".highScore").style.visibility  = "visible";

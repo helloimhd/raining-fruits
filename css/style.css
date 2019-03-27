@@ -25,6 +25,7 @@
 	position: absolute;
 	top: 303px;
 	z-index: 1;
+	visibility: hidden;
 }
 
 img {
