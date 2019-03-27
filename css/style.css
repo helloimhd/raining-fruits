@@ -176,32 +176,21 @@ textarea:focus, input:focus{
 }
 /*If the browser window is 600px or smaller, the background color will be lightblue:*/
 @media only screen and (max-width: 600px) {
-/*
-  .controls {
-  	visibility: visible;
-  	width: 350px;
-  	margin: 10px auto;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-between;
+	h1 {
+		padding: 25px;
+	}
 
-  }
+	#one, #two, #three {
+    padding: 7px 0px;
+	}
 
-  #left {
-  	background-image: url("https://img.icons8.com/wired/64/000000/chevron-left.png");
-  	background-color: transparent;
-  	border: none;
-  	width: 64px;
-  	height: 64px;
-  }
-
-  #right {
-  	background-image: url("https://img.icons8.com/wired/64/000000/chevron-right.png");
-  	background-color: transparent;
-  	border: none;
-  	width: 64px;
-  	height: 64px;
-  }*/
+	.lives {
+    font-size: 30px;
+    position: absolute;
+    bottom: 365px;
+    right: 300px;
+    display: flex;
+	}
 
   .slidecontainer {
   	width: 350px;

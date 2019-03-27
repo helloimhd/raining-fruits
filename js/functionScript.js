@@ -352,8 +352,8 @@ function closeMouth() {
 }
 
 function restart() {
-    //location.reload();
-    location = window.location;
+    location.reload();
+    //location = window.location;
 }
 
 ///////////////////    AUDIO FUNCTIONS    //////////////////////////////
