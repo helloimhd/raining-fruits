@@ -59,7 +59,7 @@ function moveBar() {
     });
 }
 
-function moveBarControl() {
+/*function moveBarControl() {
     var left = document.getElementById("left");
     var right = document.getElementById("right");
 
@@ -72,7 +72,7 @@ function moveBarControl() {
     }
     });
 }
-
+*/
 
 //  check if two elements touch
 function isCollapsed(element1, element2, fruitContent){

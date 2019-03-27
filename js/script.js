@@ -47,7 +47,6 @@ function startGame() {
     document.querySelector(".highScore").style.visibility  = "visible";
     updateHighScore(playerName, playerScore)
     moveBar();
-    moveBarControl()
 
     //  after 10 seconds, append the badIcons tgt so that badIcons will appear
     setTimeout(function() {
