@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+      <!--   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cabin+Sketch|Freckle+Face|Fredericka+the+Great|Love+Ya+Like+A+Sister|Margarine|Press+Start+2P|Rock+Salt" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+        <audio id="correctAudio">
+          <source src="sound/crunch.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="bombAudio">
+          <source src="sound/bomb.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="splatAudio">
+          <source src="sound/splat.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="wekAudio">
+          <source src="sound/wek.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="gameOverAudio">
+          <source src="sound/gameOver.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="main-container">
+            <h1>Cloudy with a chance of Fruits</h1>
+
+            <div class="game-container">
+               <!--  <div id="scoreBoard">Score</div> -->
+
+                <div class="bar-container">
+                    <img id="bar" src="images/Pacman.png">
+                </div>
+
+                <form action="#" onsubmit="startGame()" autocomplete="off">
+                  <input type="text" placeholder="Enter your name" id="getPlayerName">
+                </form>
+
+            </div> <!--  end of game container -->
+            <div class="controls">
+                <div class="left" onmousedown="moveLeft()">
+                    <!-- <img src="https://img.icons8.com/wired/64/000000/chevron-left.png"> -->
+                    <button id="left"></button>
+                </div>
+
+                <div class="right" onmousedown="moveRight()">
+                    <!-- <img src="https://img.icons8.com/wired/64/000000/chevron-right.png"> -->
+                    <button id="right"></button>
+                </div>
+            </div>
+
+            <div class="highScore">
+                <div id="scoreHeading">Highest Score</div>
+                <div class="details">
+                    <div id="playerName"></div>
+                    <div id="playerScore"></div>
+                </div>
+            </div>
+
+        </div>   <!-- end of main container -->
+
+
+
+
+
+        <script src="js/functionScript.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

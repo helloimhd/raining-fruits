@@ -1,0 +1,202 @@
+ body {
+ 	/*cursor: url("../images/watermelonCursor.png"), auto;*/
+ 	cursor: url("../images/small-watermelon.png"), auto;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-family: 'Freckle Face', cursive;
+ 	font-size: 50px !important;
+ }
+
+ .game-container {
+ 	position: relative;
+	width: 350px;
+	height: 350px;
+	background-color: black;
+	margin: auto;
+}
+
+.bar-container {
+	width: 60px;
+	height: 60px;
+
+/*	align-self: flex-end;*/
+	position: absolute;
+	top: 303px;
+	z-index: 1;
+}
+
+img {
+	width: 45px;
+	height: 45px;
+}
+
+.fruits {
+	width: 55px;
+	height: 40px;
+	font-size: 40px;
+	position: absolute;
+}
+
+.lives {
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	position: absolute;
+	bottom: 300px;
+	right: 365px;
+}
+
+
+#scoreBoard {
+	padding-top: 5px;
+	padding-left: 10px;
+	position: absolute;
+	text-align: center;
+	font-family: 'Margarine', cursive;
+	font-size: 20px;
+	color: white;
+
+}
+
+
+.highScore {
+	/*border: 2px solid red;*/
+	margin: auto;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Freckle Face', cursive;
+	font-size: 30px;
+	visibility: hidden;
+}
+
+.details {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+form {
+	position: absolute;
+	top: 220px;
+	text-align: center;
+	width: 350px;
+}
+
+input[type=text] {
+	cursor: url("https://img.icons8.com/wired/64/ffffff/cursor.png"), auto;
+	background-color: black;
+	border: 2px solid #f7f7f7;
+	border-radius: 4px;
+	padding: 15px;
+	text-transform: uppercase;
+	font-family: 'Margarine', cursive;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#playerName {
+	text-transform: none;
+	text-align: center;
+	font-family: 'Freckle Face', cursive;
+	font-size: 30px;
+	width: 200px;
+}
+
+#playerScore {
+	text-transform: none;
+	text-align: center;
+	font-family: 'Freckle Face', cursive;
+	font-size: 30px;
+	width: 200px;
+}
+
+#deduct {
+	position: absolute;
+	top: 310px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 15px;
+	color: white;
+	z-index: 1;
+}
+
+#start {
+	width: 350px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 45px;
+	position: absolute;
+	top: 100px;
+	cursor: url("https://img.icons8.com/wired/64/ffffff/cursor.png"), auto;
+}
+
+#gameOver {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 65px;
+	position: absolute;
+	top: 65px;
+/*	top: 45px;*/
+}
+
+#one, #two, #three {
+	padding-bottom: 5px;
+}
+
+#playAgain {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 35px;
+	position: absolute;
+	top: 220px;
+/*	top: 190px;*/
+	cursor: url("https://img.icons8.com/wired/64/ffffff/cursor.png"), auto;
+}
+
+.controls {
+	visibility: hidden;
+}
+
+/*If the browser window is 600px or smaller, the background color will be lightblue:*/
+@media only screen and (max-width: 600px) {
+
+  .controls {
+  	visibility: visible;
+  	width: 350px;
+  	margin: 10px auto;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+
+  }
+
+  #left {
+  	background-image: url("https://img.icons8.com/wired/64/000000/chevron-left.png");
+  	background-color: transparent;
+  	border: none;
+  	width: 64px;
+  	height: 64px;
+  }
+
+  #right {
+  	background-image: url("https://img.icons8.com/wired/64/000000/chevron-right.png");
+  	background-color: transparent;
+  	border: none;
+  	width: 64px;
+  	height: 64px;
+  }
+
+}
